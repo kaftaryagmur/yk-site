@@ -44,6 +44,7 @@ body {
   display: flex;
   list-style: none;
   column-gap: 40px;
+  padding: 0;
 }
 
 .menu-list-item {
@@ -135,7 +136,7 @@ body {
   background: url("photos/bg.jpg");
   padding: 50px;
   height: calc(100vh-160px);
- 
+
   background-size: 100% 100%;
 }
 .featured-title {
@@ -191,24 +192,28 @@ body {
   column-gap: 5px;
   text-size-adjust: 5px;
 }
+/*about end*/
 
-.about-pictures {
+/*education start*/
+
+.education-pictures {
   list-style: none;
 }
 
-.about-img {
+.education-img {
   width: 270px;
   padding-left: 70%;
   padding-top: 0;
 }
 
-.about-picture-container {
+.education-picture-container {
   background: url(photos/bg.jpg);
   height: 250;
   object-fit: cover;
+  position: sticky;
 }
 
-.about-picture {
+.education-picture {
   height: 200px;
   width: 200px;
   object-fit: cover;
@@ -216,16 +221,13 @@ body {
   display: inline-block;
   margin-left: 30px;
 }
-/*about end*/
-
-/*education start*/
 
 .education-container {
   margin-left: 70px;
 }
 
 .education-title {
-  padding-top: 30px;
+  padding-bottom: 30px;
   margin-left: 70px;
   text-align: center;
 }
@@ -241,6 +243,103 @@ body {
 .date {
   color: rgb(255, 255, 255, 0.7);
 }
+
+.education-text-certificate {
+  margin-left: 70px;
+}
+
+.certificate-text-title {
+  text-decoration: underline;
+}
+
+.certificate-list {
+  padding-inline-start: 1.5%;
+}
+
+.slider-frame{
+  overflow: hidden;
+  border: 2px solid;
+  margin-left: 150px;
+  width: 45%;
+}
+
+.documents-item {
+  position: relative;
+}
+
+.documents-item:hover .documents-item-title {
+  opacity: 1;
+}
+
+.documents-item:hover .documents-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.documents-text {
+  padding-top: 30px;
+}
+
+.documents-list {
+  list-style: none;
+  /*padding-left: 150px;*/
+  height: 300px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.documents-item-img {
+  width: 270px;
+  height: 200px;
+  object-fit: fill;
+  transition: 0.5s all ease-in-out;
+}
+
+.documents-item-title {
+  background-color: rgb(40, 40, 40, 0.5);
+  padding: 0 10px;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.document-list-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.arrow{
+  width: 100px;
+  display: flex;
+  font-size: 120px;
+  opacity: 0.5;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.arrow:hover{
+  opacity: 1;
+}
+
+.rigth-arrow{
+  position: absolute;
+  right: 25%;
+  top: 100px;
+}
+
+.left-arrow{
+  position: absolute;
+  left: 30px;
+  top: 100px;
+}
+
+
 
 /*education end*/
 
