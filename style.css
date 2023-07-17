@@ -132,9 +132,10 @@ body {
   margin-left: 50px;
 }
 .featured-content {
-  background: url("photos/wallpaperflare.com_wallpaper.jpg");
+  background: url("photos/bg.jpg");
   padding: 50px;
   height: calc(100vh-160px);
+ 
   background-size: 100% 100%;
 }
 .featured-title {
@@ -146,6 +147,7 @@ body {
   padding: 10px;
   margin: 30px 0;
   border-radius: 10px;
+  color: black;
 }
 
 .info-button {
@@ -167,7 +169,7 @@ body {
 
 /*about start*/
 
-.about-container{
+.about-container {
   margin-left: 70px;
 }
 
@@ -176,47 +178,70 @@ body {
   margin-left: 70px;
   text-align: center;
 }
-.about-text-title{
-color: black;
+.about-text-title {
+  color: black;
 }
 
 .about-text-container {
   background-color: rgb(255, 255, 255, 0.5);
   padding-left: 50px;
   padding-right: 20px;
-  margin: 30px  ;
+  margin: 30px;
   text-align: left;
   column-gap: 5px;
   text-size-adjust: 5px;
 }
 
-.about-pictures{
+.about-pictures {
   list-style: none;
 }
 
-.about-img{
+.about-img {
   width: 270px;
   padding-left: 70%;
   padding-top: 0;
 }
 
-.about-picture{
+.about-picture-container {
+  background: url(photos/bg.jpg);
+  height: 250;
+  object-fit: cover;
+}
+
+.about-picture {
   height: 200px;
   width: 200px;
   object-fit: cover;
   border-radius: 100px;
   display: inline-block;
   margin-left: 30px;
-  
 }
-/*about start*/
+/*about end*/
 
 /*education start*/
 
+.education-container {
+  margin-left: 70px;
+}
 
+.education-title {
+  padding-top: 30px;
+  margin-left: 70px;
+  text-align: center;
+}
+
+.education-text-schools {
+  margin-left: 70px;
+}
+
+.school-text-title {
+  text-decoration: underline;
+}
+
+.date {
+  color: rgb(255, 255, 255, 0.7);
+}
 
 /*education end*/
-
-
 
 /*content end*/
