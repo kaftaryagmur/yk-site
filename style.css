@@ -36,8 +36,10 @@ body {
 }
 
 .logo {
-  color: darkslategray;
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: flex;
 }
 
 .menu-list {
@@ -98,6 +100,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 1px;
+  transition: 0.5s all ease;
 }
 
 .toggle-icon {
@@ -133,10 +136,9 @@ body {
   margin-left: 50px;
 }
 .featured-content {
-  background: url("photos/bg.jpg");
+  background: url("photos/dark-bg.jpg");
   padding: 50px;
   height: calc(100vh-160px);
-
   background-size: 100% 100%;
 }
 .featured-title {
@@ -207,7 +209,7 @@ body {
 }
 
 .education-picture-container {
-  background: url(photos/bg.jpg);
+  background: url(photos/dark-bg.jpg);
   height: 250;
   object-fit: cover;
   position: sticky;
@@ -256,11 +258,12 @@ body {
   padding-inline-start: 1.5%;
 }
 
-.slider-frame{
+.slider-frame {
   overflow: hidden;
-  border: 2px solid;
+  /*border: 2px solid;*/
   margin-left: 150px;
   width: 45%;
+  background-color: rgba(170, 170, 170, 0.5);
 }
 
 .documents-item {
@@ -288,6 +291,9 @@ body {
   display: flex;
   align-items: center;
   column-gap: 30px;
+  transform: translateX(0);
+  transition: 1s all ease-in-out;
+
 }
 
 .documents-item-img {
@@ -314,7 +320,8 @@ body {
   position: relative;
 }
 
-.arrow{
+.arrow {
+  color: gray;
   width: 100px;
   display: flex;
   font-size: 120px;
@@ -323,24 +330,76 @@ body {
   cursor: pointer;
 }
 
-.arrow:hover{
+.arrow:hover {
   opacity: 1;
 }
 
-.rigth-arrow{
+.rigth-arrow {
   position: absolute;
   right: 25%;
   top: 100px;
 }
 
-.left-arrow{
-  position: absolute;
-  left: 30px;
-  top: 100px;
-}
-
-
 
 /*education end*/
-
 /*content end*/
+
+/*dark mode start*/
+
+
+
+.container.active{
+  background-color: white;
+}
+.navbar.active{
+  background-color: white;
+  color: black;
+}
+.sidebar.active{
+  background-color: white;
+  color: black;
+}
+
+.sidebar i.active{
+  color: black;
+}
+
+.toggle.active{
+  background-color: black;
+}
+
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+}
+
+.about-container.active{
+  color: black;
+}
+
+.education-container.active{
+  color: black;
+}
+
+.about-text-container.active{
+  background-color: rgba(118, 117, 117, 0.5);
+}
+
+.date.active {
+  color: rgba(56, 55, 55, 0.7);
+}
+
+.education-picture-container.active {
+  background: url(photos/light-bg.jpg);
+  height: 250;
+  object-fit: cover;
+  position: sticky;
+}
+
+.featured-content.active {
+  background: url("photos/light-bg.jpg");
+  padding: 50px;
+  height: calc(100vh-160px);
+  background-size: 100% 100%;
+}
+/*dark mode end*/
