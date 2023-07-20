@@ -1,7 +1,6 @@
 /*---------------------arrow start--------------------*/
 const arrows = document.querySelectorAll(".arrow");
 const documentList = document.querySelector(".documents-list")
-
 arrows.forEach((arrow, i) => {
     let clickCounter = 0;
     const imageItem = documentList.querySelectorAll("img").length;
@@ -14,7 +13,6 @@ arrows.forEach((arrow, i) => {
             documentList.style.transform = "translateX(0)";
         }
     });
-
 });
 /*---------------------arrow end--------------------*/
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Tilt+Neon&family=Tilt+Warp&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /* base css start */
 
 * {
@@ -7,8 +7,7 @@
 
 body {
   height: 200vh;
-  font-family: "Lilita One", cursive;
-  font-family: "Tilt Neon", cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -250,11 +249,24 @@ body {
   margin-left: 70px;
 }
 
+
 .certificate-text-title {
   text-decoration: underline;
 }
 
 .certificate-list {
+  padding-inline-start: 1.5%;
+}
+
+.education-text-software{
+  margin-left: 70px;
+}
+
+.software-text-title{
+  text-decoration: underline;
+}
+
+.language-list{
   padding-inline-start: 1.5%;
 }
 
@@ -313,6 +325,7 @@ body {
   left: 100px;
   opacity: 0;
   transition: 0.5s all ease-in-out;
+  color: white;
 }
 
 .document-list-wrapper {
@@ -403,3 +416,10 @@ body {
   background-size: 100% 100%;
 }
 /*dark mode end*/
+
+/*responsive start*/
+/*@media only screen and (max-width: )*/
+  
+
+
+/*responsive end*/
