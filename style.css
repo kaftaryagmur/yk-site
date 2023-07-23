@@ -34,6 +34,7 @@ body {
   padding: 0 50px;
 }
 
+
 .logo {
   width: 50px;
   height: 50px;
@@ -50,6 +51,16 @@ body {
 
 .menu-list-item {
   cursor: pointer;
+}
+
+.menu-list-item a {
+  text-decoration: none; 
+  color: white; 
+}
+
+.menu-list-item a:hover {
+  font-weight: bold;
+  color: lightblue; 
 }
 
 .menu-list-item:hover {
@@ -140,9 +151,7 @@ body {
   height: calc(100vh-160px);
   background-size: 100% 100%;
 }
-/*.featured-title {
-  width: 400px;
-}*/
+
 .featured-description {
   width: 500px;
   background-color: rgb(255, 255, 255, 0.5);
@@ -359,15 +368,21 @@ body {
 
 /*dark mode start*/
 
-
-
 .container.active{
   background-color: white;
 }
+
+.menu-list-item a.active {
+  text-decoration: none; 
+  color: white; 
+}
+
 .navbar.active{
   background-color: white;
   color: black;
 }
+
+
 .sidebar.active{
   background-color: white;
   color: black;
