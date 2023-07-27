@@ -111,7 +111,7 @@ body {
 /*main content start*/
 
 .intro-wrapper{
-  background: url("city-photos/bg.jpg");
+  background: url("../city-photos/bg.jpg");
   object-fit: cover;
 }
 
@@ -181,14 +181,14 @@ body {
 }
 
 .education-picture-container.active {
-  background: url(photos/light-bg.jpg);
+  background: url(../photos/light-bg.jpg);
   height: 250;
   object-fit: cover;
   position: sticky;
 }
 
 .featured-content.active {
-  background: url("photos/light-bg.jpg");
+  background: url("../photos/light-bg.jpg");
   padding: 50px;
   height: calc(100vh-160px);
   background-size: 100% 100%;

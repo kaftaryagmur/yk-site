@@ -8,27 +8,26 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <!-- navbar start -->
-    <div class="navbar">
+    <div class="navbar" id="ana-sayfa">
       <div class="navbar-wrapper">
         <div class="logo">
-          <img src="photos/hesap-logo.png" alt="">
+          <img src="../photos/hesap-logo.png" alt="">
         </div>
-        <div class="menu-container">
+        <nav class="menu-container">
           <ul class="menu-list">
-            <li class="menu-list-item active">Ana Sayfa</li>
-            <li class="menu-list-item">Hakkımda</li>
-            <li class="menu-list-item">Eğitim</li>
+            <li class="menu-list-item"><a href="#hakkimda">Hakkımda</a></li>
+            <li class="menu-list-item"><a href="#egitim">Eğitim</a></li>
             <li class="menu-list-item"><a href="city.html">Şehrim</a></li>
             <li class="menu-list-item">İletişim</li>
           </ul>
-        </div>
+        </nav>
         <div class="profile-container">
-          <img class="profile-picture" src="photos/hesap-logo.png" alt="" />
+          <img class="profile-picture" src="../photos/hesap-logo.png" alt="" />
           <div class="profile-text-container">
             <span class="profile-text">Hesabım</span>
             <i class="bi bi-caret-down-square-fill"></i>
@@ -45,11 +44,11 @@
 
     <!-- sidebar start -->
     <div class="sidebar">
-      <i class="bi bi-search"></i>
-      <i class="bi bi-house-door-fill"></i>
-      <i class="bi bi-file-person"></i>
-      <i class="bi bi-mortarboard-fill"></i>
-      <i class="bi bi-envelope-plus-fill"></i>    </div>
+      <i class="bi bi-arrow-up" id="main"></i>
+      <i class="bi bi-file-person" id="about"></i>
+      <i class="bi bi-mortarboard-fill" id="education"></i>
+      <i class="bi bi-envelope-plus-fill"></i>
+    </div>
     <!-- sidebar end -->
 
     <!-- content start -->
@@ -57,7 +56,7 @@
       <!--? featured content start -->
       <div class="content-wrapper">
         <div class="featured-content">
-          <img src="photos/kaftar-sb-none-bg.png" alt="" />
+          <img src="../photos/kaftar-sb-none-bg.png" alt=""/>
           <p class="featured-description">
             Merhaba, ben Yağmur Kaftar. 20 yaşındayım ve Sakarya
             Üniversitesi'nde Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.
@@ -70,11 +69,6 @@
             yolculuğumu paylaşmayı ve diğer insanlarla deneyimlerimi paylaşmayı
             umuyorum.
           </p>
-          <div class="featured-button">
-            <button class="info-button">
-              <i class="bi bi-info-circle"></i> Daha Fazla Bilgi
-            </button>
-          </div>
         </div>
       </div>
 
@@ -82,7 +76,7 @@
 
       <!-- content start -->
       <!-- about start -->
-      <div class="about-container">
+      <div class="about-container" id="hakkimda">
         <h1 class="about-title">Hakkımda</h1>
         <div class="about-text-container">
           <br />
@@ -139,22 +133,22 @@
       </div>
       <!-- about end -->
       <!-- education start -->
-      <div class="education-container">
+      <div class="education-container" id="egitim">
         <h1 class="education-title">Eğitim</h1>
         <div>
           <div class="education-picture-container">
-            <img class="education-picture" src="photos/yükselis.png" alt="" />
-            <img class="education-picture" src="photos/yükselis2.png" alt="" />
-            <img class="education-picture" src="photos/mezuniyet.jpg" alt="" />
+            <img class="education-picture" src="../photos/yükselis.png" alt="" />
+            <img class="education-picture" src="../photos/yükselis2.png" alt="" />
+            <img class="education-picture" src="../photos/mezuniyet.jpg" alt="" />
             <img
               class="education-picture"
-              src="photos/mezuniyet-2.jpg"
+              src="../photos/mezuniyet-2.jpg"
               alt=""
             />
-            <img class="education-picture" src="photos/fakulte.jpeg" alt="" />
+            <img class="education-picture" src="../photos/fakulte.jpeg" alt="" />
             <img
               class="education-picture"
-              src="photos/sau-photo-2.jpg"
+              src="../photos/sau-photo-2.jpg"
               alt=""
             />
           </div>
@@ -214,7 +208,7 @@
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
-                    src="photos/eTwinning.jpg"
+                    src="../photos/eTwinning.jpg"
                     alt=""
                   />
                   <div class="documents-item-info">
@@ -224,7 +218,7 @@
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
-                    src="photos/oxford-big-read.jpg"
+                    src="../photos/oxford-big-read.jpg"
                     alt=""
                   />
                   <div class="documents-item-info">
@@ -234,7 +228,7 @@
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
-                    src="photos/diksiyon.png"
+                    src="../photos/diksiyon.png"
                     alt=""
                   />
                   <div class="documents-item-info">
@@ -244,7 +238,7 @@
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
-                    src="photos/etkili-iletisim-beden-dili.png"
+                    src="../photos/etkili-iletisim-beden-dili.png"
                     alt=""
                   />
                   <div class="documents-item-info">
@@ -256,7 +250,7 @@
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
-                    src="photos/insanları-etkileme-yöntemleri.png"
+                    src="../photos/insanları-etkileme-yöntemleri.png"
                     alt=""
                   />
                   <div class="documents-item-info">
@@ -268,7 +262,7 @@
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
-                    src="photos/zor-insanlarla-iletisim.png"
+                    src="../photos/zor-insanlarla-iletisim.png"
                     alt=""
                   />
                   <div class="documents-item-info">
@@ -289,6 +283,6 @@
       </div>
       <!-- education end -->
     </div>
-    <script src="script.js"></script>
+    <script src="../javascript/script.js"></script>
   </body>
 </html>

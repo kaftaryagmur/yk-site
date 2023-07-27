@@ -5,8 +5,11 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 200vh;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,7 +25,7 @@ body {
   background-color: black;
   height: 60px;
   color: white;
-  position: sticky;
+  position: relative;
   top: 0;
 }
 
@@ -145,33 +148,25 @@ body {
 .content-wrapper {
   margin-left: 50px;
 }
+
 .featured-content {
-  background: url("photos/dark-bg.jpg");
+  background: url("../photos/dark-bg.jpg");
   padding: 50px;
-  height: calc(100vh-160px);
-  background-size: 100% 100%;
+  height: calc(100vh - 160px);
+  background-size: cover;
+}
+
+.featured-content img{
+  padding:0;
 }
 
 .featured-description {
   width: 500px;
   background-color: rgb(255, 255, 255, 0.5);
   padding: 10px;
-  margin: 30px 0;
+  margin-top: 40px;
   border-radius: 10px;
   color: black;
-}
-
-.info-button {
-  display: flex;
-  column-gap: 10px;
-  padding: 10px 25px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: rgb(145, 142, 142, 0.5);
 }
 
 /* featured content end */
@@ -217,7 +212,7 @@ body {
 }
 
 .education-picture-container {
-  background: url(photos/dark-bg.jpg);
+  background: url(../photos/dark-bg.jpg);
   height: 250;
   object-fit: cover;
   position: sticky;
@@ -418,17 +413,17 @@ body {
 }
 
 .education-picture-container.active {
-  background: url(photos/light-bg.jpg);
+  background: url(../photos/light-bg.jpg);
   height: 250;
   object-fit: cover;
   position: sticky;
 }
 
 .featured-content.active {
-  background: url("photos/light-bg.jpg");
+  background: url("../photos/light-bg.jpg");
   padding: 50px;
-  height: calc(100vh-160px);
-  background-size: 100% 100%;
+  height: calc(100vh- 160px);
+  background-size: cover;
 }
 /*dark mode end*/
 

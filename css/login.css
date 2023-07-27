@@ -10,7 +10,7 @@ body {
   display: grid;
   height: 100vh;
   place-items: center;
-  background: url(photos/login-bg.jpg);
+  background: url(../photos/login-bg.jpg);
 }
 
 .container {
