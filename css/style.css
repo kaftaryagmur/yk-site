@@ -1,5 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /* base css start */
+
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
 
 * {
   margin: 0;
@@ -10,7 +24,17 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-list-item a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.menu-list-item a.active {
+  color: black;
 }
 
 .container {
@@ -31,18 +55,10 @@ body {
 
 .navbar-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
   padding: 0 50px;
-}
-
-
-.logo {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  display: flex;
 }
 
 .menu-list {
@@ -50,6 +66,7 @@ body {
   list-style: none;
   column-gap: 40px;
   padding: 0;
+  align-items: center;
 }
 
 .menu-list-item {
@@ -57,27 +74,29 @@ body {
 }
 
 .menu-list-item a {
-  text-decoration: none; 
-  color: white; 
+  text-decoration: none;
 }
 
 .menu-list-item a:hover {
   font-weight: bold;
-  color: lightblue; 
+  color: gray;
 }
 
 .menu-list-item:hover {
   font-weight: bold;
 }
 
-.menu-list-item.active {
-  font-weight: bold;
-}
-
 .profile-container {
   display: flex;
+  padding: 5px;
   align-items: center;
   column-gap: 20px;
+  background-color: rgba(56, 55, 55, 0.7);
+  border-radius: 30px;
+  position: fixed;
+  top: 1%;
+  right: 0;
+  z-index: 5;
 }
 
 .profile-picture {
@@ -119,6 +138,7 @@ body {
 .toggle-icon {
   color: goldenrod;
 }
+
 /* navbar end */
 
 /* sidebar start */
@@ -156,8 +176,8 @@ body {
   background-size: cover;
 }
 
-.featured-content img{
-  padding:0;
+.featured-content img {
+  padding: 0;
 }
 
 .featured-description {
@@ -183,6 +203,7 @@ body {
   padding-top: 30px;
   margin-left: 70px;
   text-align: center;
+  font-size: 40px;
 }
 .about-text-title {
   color: black;
@@ -195,11 +216,12 @@ body {
   margin: 30px;
   text-align: left;
   column-gap: 5px;
-  text-size-adjust: 5px;
 }
-/*about end*/
 
-/*education start*/
+.about-container .about-text-container p strong a {
+  text-decoration: none;
+  color: white ;
+}
 
 .education-pictures {
   list-style: none;
@@ -212,10 +234,13 @@ body {
 }
 
 .education-picture-container {
-  background: url(../photos/dark-bg.jpg);
+  background-color: black;
   height: 250;
   object-fit: cover;
   position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .education-picture {
@@ -223,22 +248,51 @@ body {
   width: 200px;
   object-fit: cover;
   border-radius: 100px;
-  display: inline-block;
-  margin-left: 30px;
+  display: inline-flex;
+  margin: 30px;
 }
 
+/*about end*/
+
+/*education start*/
+
 .education-container {
-  margin-left: 70px;
+  margin-left: 50px;
+  background: url(../photos/education-bg.jpg);
+  background-position: right;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .education-title {
-  padding-bottom: 30px;
-  margin-left: 70px;
+  padding: 20px;
   text-align: center;
+  font-size: 40px;
+  background-color: black;
 }
 
-.education-text-schools {
-  margin-left: 70px;
+.edu-wrapper {
+  padding: 20px;
+}
+
+.schools-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.schools-box article {
+  flex: 1;
+  padding: 20px;
+}
+.schools-box article li {
+  font-size: 19px;
+}
+
+.education-text-schools,
+.education-text-software,
+.education-text-certificate {
+  margin-left: 40px;
 }
 
 .school-text-title {
@@ -249,11 +303,6 @@ body {
   color: rgb(255, 255, 255, 0.7);
 }
 
-.education-text-certificate {
-  margin-left: 70px;
-}
-
-
 .certificate-text-title {
   text-decoration: underline;
 }
@@ -262,23 +311,18 @@ body {
   padding-inline-start: 1.5%;
 }
 
-.education-text-software{
-  margin-left: 70px;
-}
-
-.software-text-title{
+.software-text-title {
   text-decoration: underline;
 }
 
-.language-list{
+.language-list {
   padding-inline-start: 1.5%;
 }
 
 .slider-frame {
   overflow: hidden;
-  /*border: 2px solid;*/
-  margin-left: 150px;
-  width: 45%;
+  margin-left: 35%;
+  width: 30%;
   background-color: rgba(170, 170, 170, 0.5);
 }
 
@@ -297,19 +341,20 @@ body {
 }
 
 .documents-text {
-  padding-top: 30px;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center; 
+  font-style: italic;
 }
 
 .documents-list {
   list-style: none;
-  /*padding-left: 150px;*/
   height: 300px;
   display: flex;
   align-items: center;
   column-gap: 30px;
   transform: translateX(0);
   transition: 1s all ease-in-out;
-
 }
 
 .documents-item-img {
@@ -335,6 +380,7 @@ body {
 .document-list-wrapper {
   overflow: hidden;
   position: relative;
+  padding: 25px;
 }
 
 .arrow {
@@ -357,54 +403,62 @@ body {
   top: 100px;
 }
 
-
 /*education end*/
 /*content end*/
 
 /*dark mode start*/
 
-.container.active{
+.container.active {
   background-color: white;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
 }
 
 .menu-list-item a.active {
-  text-decoration: none; 
-  color: white; 
+  text-decoration: none;
+  color: white;
 }
 
-.navbar.active{
+.navbar.active {
   background-color: white;
   color: black;
 }
 
-
-.sidebar.active{
+.sidebar.active {
   background-color: white;
   color: black;
 }
 
-.sidebar i.active{
+.sidebar i.active {
   color: black;
 }
 
-.toggle.active{
+.toggle.active {
   background-color: black;
 }
 
-.toggle-ball.active{
+.toggle-ball.active {
   background-color: white;
   transform: translateX(-20px);
 }
 
-.about-container.active{
+.about-container.active {
   color: black;
 }
 
-.education-container.active{
+.education-title.active {
   color: black;
+  background-color: white;
 }
 
-.about-text-container.active{
+.education-container.active {
+  color: white;
+  background-color: white;
+}
+
+.about-text-container.active {
   background-color: rgba(118, 117, 117, 0.5);
 }
 
@@ -413,7 +467,7 @@ body {
 }
 
 .education-picture-container.active {
-  background: url(../photos/light-bg.jpg);
+  background-color: rgba(109, 109, 109, 0.5);
   height: 250;
   object-fit: cover;
   position: sticky;
@@ -425,11 +479,10 @@ body {
   height: calc(100vh- 160px);
   background-size: cover;
 }
+
 /*dark mode end*/
 
 /*responsive start*/
 /*@media only screen and (max-width: )*/
-  
-
 
 /*responsive end*/

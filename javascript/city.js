@@ -1,4 +1,3 @@
-
 /*---------------------dark mode start--------------------*/
 
 const ball = document.querySelector(".toggle-ball");

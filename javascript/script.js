@@ -1,3 +1,9 @@
+  // Sayfa yüklendiğinde en üstüne odaklanma işlemi
+  window.onload = function() {
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
 /*---------------------arrow start--------------------*/
 const arrows = document.querySelectorAll(".arrow");
 const documentList = document.querySelector(".documents-list");
@@ -26,7 +32,7 @@ arrows.forEach((arrow, i) => {
 /*---------------------dark mode start--------------------*/
 
 const ball = document.querySelector(".toggle-ball");
-const items = document.querySelectorAll(".container,.menu-list-item a.active,.navbar,.sidebar,.sidebar i,.toggle,.toggle-ball,.about-container,.education-container,.about-text-container,.date,.education-picture-container,.featured-content");
+const items = document.querySelectorAll(".container,.menu-list-item a,.navbar,.sidebar,.sidebar i,.toggle,.toggle-ball,.about-container,.education-container,.education-title,.about-text-container,.date,.education-picture-container,.featured-content");
 
 ball.addEventListener("click", function () {
     items.forEach((item) => item.classList.toggle("active"))
@@ -41,21 +47,21 @@ ball.addEventListener("click", function () {
         const icon3 = document.getElementById('education');
 
         // Hedeflenen kısımları seçin
-        const hedefKisim1 = document.getElementById('ana-sayfa');
-        const hedefKisim2 = document.getElementById('hakkimda');
-        const hedefKisim3 = document.getElementById('egitim');
+        const hedef1 = document.getElementById('ana-sayfa');
+        const hedef2 = document.getElementById('hakkimda');
+        const hedef3 = document.getElementById('egitim');
 
         // Iconlara tıklama olaylarını dinleyin ve odaklanma işlemini yapın
         main.addEventListener('click', function () {
-            hedefKisim1.scrollIntoView({ behavior: 'smooth' });
+            hedef1.scrollIntoView({ behavior: 'smooth' });
         });
 
         about.addEventListener('click', function () {
-            hedefKisim2.scrollIntoView({ behavior: 'smooth' });
+            hedef2.scrollIntoView({ behavior: 'smooth' });
         });
 
         education.addEventListener('click', function () {
-            hedefKisim3.scrollIntoView({ behavior: 'smooth' });
+            hedef3.scrollIntoView({ behavior: 'smooth' });
         });
 
        

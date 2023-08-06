@@ -13,19 +13,20 @@
 
   <body>
     <!-- navbar start -->
-    <div class="navbar" id="ana-sayfa">
-      <div class="navbar-wrapper">
-        <div class="logo">
-          <img src="../photos/hesap-logo.png" alt="">
-        </div>
+    <header class="navbar" id="ana-sayfa">
+      <section class="navbar-wrapper">
         <nav class="menu-container">
           <ul class="menu-list">
             <li class="menu-list-item"><a href="#hakkimda">Hakkımda</a></li>
             <li class="menu-list-item"><a href="#egitim">Eğitim</a></li>
-            <li class="menu-list-item"><a href="city.html">Şehrim</a></li>
+            <li class="menu-list-item">
+              <a href="city.html" target="_self">Şehrim</a>
+            </li>
             <li class="menu-list-item">İletişim</li>
           </ul>
         </nav>
+      </section>
+      <section>
         <div class="profile-container">
           <img class="profile-picture" src="../photos/hesap-logo.png" alt="" />
           <div class="profile-text-container">
@@ -38,25 +39,25 @@
             <div class="toggle-ball"></div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </header>
     <!-- navbar end -->
 
     <!-- sidebar start -->
-    <div class="sidebar">
+    <nav class="sidebar">
       <i class="bi bi-arrow-up" id="main"></i>
       <i class="bi bi-file-person" id="about"></i>
       <i class="bi bi-mortarboard-fill" id="education"></i>
       <i class="bi bi-envelope-plus-fill"></i>
-    </div>
+    </nav>
     <!-- sidebar end -->
 
     <!-- content start -->
-    <div class="container">
+    <section class="container">
       <!--? featured content start -->
       <div class="content-wrapper">
         <div class="featured-content">
-          <img src="../photos/kaftar-sb-none-bg.png" alt=""/>
+          <img src="../photos/kaftar-sb-none-bg.png" alt="" />
           <p class="featured-description">
             Merhaba, ben Yağmur Kaftar. 20 yaşındayım ve Sakarya
             Üniversitesi'nde Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.
@@ -76,9 +77,9 @@
 
       <!-- content start -->
       <!-- about start -->
-      <div class="about-container" id="hakkimda">
-        <h1 class="about-title">Hakkımda</h1>
-        <div class="about-text-container">
+      <section class="about-container" id="hakkimda">
+        <header><h1 class="about-title">Hakkımda</h1></header>
+        <article class="about-text-container">
           <br />
           <h3 class="about-text-title">❃ Merhaba! ❃</h3>
           <br />
@@ -118,43 +119,45 @@
           </p>
           <br />
           <p>
-            Merak ettikleriniz ve iletişim kumanız için gerekli bilgilere
-            iletişim kısmından ulaşabilirsiniz. Daha fazla bilgi bulabilir,
-            projelerime göz atabilir ve benimle iletişime geçebilirsiniz.
-            Birlikte çalışmak veya herhangi bir konuda bilgi alışverişinde
-            bulunmak için sabırsızlanıyorum!
+            Merak ettikleriniz ve iletişim kurmanız için gerekli bilgilere
+            <strong><a href="communication.html">iletişim</a></strong> kısmından
+            ulaşabilirsiniz. Daha fazla bilgi bulabilir, projelerime göz
+            atabilir ve benimle iletişime geçebilirsiniz. Birlikte çalışmak veya
+            herhangi bir konuda bilgi alışverişinde bulunmak için
+            sabırsızlanıyorum!
           </p>
           <br />
           <p>Teşekkürler ve görüşmek üzere,</p>
           <br />
           <p>Yağmur.</p>
           <br />
-        </div>
-      </div>
+        </article>
+
+        <section class="education-picture-container">
+          <img class="education-picture" src="../photos/yükselis2.png" alt="" />
+          <img class="education-picture" src="../photos/mezuniyet.jpg" alt="" />
+          <img
+            class="education-picture"
+            src="../photos/mezuniyet-2.jpg"
+            alt=""
+          />
+          <img class="education-picture" src="../photos/fakulte.jpeg" alt="" />
+          <img
+            class="education-picture"
+            src="../photos/sau-photo-2.jpg"
+            alt=""
+          />
+        </section>
+      </section>
+      <br />
       <!-- about end -->
+
       <!-- education start -->
-      <div class="education-container" id="egitim">
-        <h1 class="education-title">Eğitim</h1>
-        <div>
-          <div class="education-picture-container">
-            <img class="education-picture" src="../photos/yükselis.png" alt="" />
-            <img class="education-picture" src="../photos/yükselis2.png" alt="" />
-            <img class="education-picture" src="../photos/mezuniyet.jpg" alt="" />
-            <img
-              class="education-picture"
-              src="../photos/mezuniyet-2.jpg"
-              alt=""
-            />
-            <img class="education-picture" src="../photos/fakulte.jpeg" alt="" />
-            <img
-              class="education-picture"
-              src="../photos/sau-photo-2.jpg"
-              alt=""
-            />
-          </div>
-          <div style="float: left; width: 40%">
-            <div class="education-text-schools">
-              <br />
+      <section class="education-container">
+        <header><h1 class="education-title" id="egitim">Eğitim</h1></header>
+        <div class="edu-wrapper">
+          <div class="schools-box">
+            <article class="education-text-schools">
               <h2 class="school-text-title">Okullar</h2>
               <h3 class="highschool">- Özel Çağdaş Bilime Yükselim Okulları</h3>
               <p class="date">2017-2021</p>
@@ -163,8 +166,8 @@
               <h4>Bilgisayar Mühendisliği</h4>
               <p class="date">2021-2026</p>
               <br /><br />
-            </div>
-            <div class="education-text-certificate">
+            </article>
+            <article class="education-text-certificate">
               <h2 class="certificate-text-title">Sertifikalar-Eğitimler</h2>
               <ul class="certificate-list">
                 <li>Diksiyon-Etkin Kampüs/2019</li>
@@ -173,20 +176,21 @@
                 <li>Etkili İletişim ve Beden Dili-Etkin Kampüs/2019</li>
                 <li>Global Bilgi Kariyer Zirvesi -Turkcell/2021</li>
               </ul>
-            </div><br>
-            <div class="education-text-software">
+            </article>
+            <br />
+            <article class="education-text-software">
               <h2 class="software-text-title">Yazılım Dilleri/Projeler</h2>
               <ul class="language-list">
                 <li>C++</li>
                 <li>C#</li>
                 <li>Html/Css/JavaScript</li>
-                <li>PHP</li><br>
+                <li>PHP</li>
+                <br />
               </ul>
-              <h4>Oluşturduğum projelerime GitHub hesabımdan ulaşabilirsiniz.</h4>
-            </div>
+            </article>
           </div>
         </div>
-        <div style="float: right; width: 60%" class="documents">
+        <article class="documents">
           <p class="documents-text">
             Ortaokul ve lise yıllarım boyunca okul hayatımın yanı sıra iletişim
             seminerleri, uluslararası projeler, yarışmalar ve benzeri
@@ -201,30 +205,37 @@
             şekillendirdi.
           </p>
           <br />
-
           <div class="document-list-wrapper">
             <div class="slider-frame">
               <ul class="documents-list">
-                <li class="documents-item">
-                  <img
-                    class="documents-item-img"
-                    src="../photos/eTwinning.jpg"
-                    alt=""
-                  />
-                  <div class="documents-item-info">
-                    <span class="documents-item-title"> eTwinning</span>
-                  </div>
-                </li>
-                <li class="documents-item">
-                  <img
-                    class="documents-item-img"
-                    src="../photos/oxford-big-read.jpg"
-                    alt=""
-                  />
-                  <div class="documents-item-info">
-                    <span class="documents-item-title">Big Read</span>
-                  </div>
-                </li>
+                <a
+                  target="_blank"
+                  href="https://school-education.ec.europa.eu/en/etwinning"
+                >
+                  <li class="documents-item">
+                    <img
+                      class="documents-item-img"
+                      src="../photos/eTwinning.jpg"
+                      alt=""
+                    />
+                    <div class="documents-item-info">
+                      <span class="documents-item-title">eTwinning</span>
+                    </div>
+                  </li></a
+                >
+                <a target="_blank" href="https://www.oxfordbigread.com/">
+                  <li class="documents-item">
+                    <img
+                      class="documents-item-img"
+                      src="../photos/oxford-big-read.jpg"
+                      alt=""
+                    />
+                    <div class="documents-item-info">
+                      <span class="documents-item-title">Big Read</span>
+                    </div>
+                  </li></a>
+
+                <a target="_blank" href="https://www.etkinkampus.com/">
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
@@ -235,6 +246,8 @@
                     <span class="documents-item-title">Diksiyon</span>
                   </div>
                 </li>
+              </a>
+              <a target="_blank" href="https://www.etkinkampus.com/">
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
@@ -247,6 +260,8 @@
                     >
                   </div>
                 </li>
+              </a>
+              <a target="_blank" href="https://www.etkinkampus.com/">
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
@@ -259,6 +274,8 @@
                     >
                   </div>
                 </li>
+              </a>
+              <a  target="_blank" href="https://www.etkinkampus.com/">
                 <li class="documents-item">
                   <img
                     class="documents-item-img"
@@ -271,18 +288,17 @@
                     >
                   </div>
                 </li>
+              </a>
               </ul>
             </div>
             <div class="rigth-arrow">
               <i class="bi bi-chevron-right arrow"></i>
             </div>
-            </div>
           </div>
-        </div>
-        <div style="clear: both"></div>
-      </div>
+        </article>
+      </section>
       <!-- education end -->
-    </div>
+    </section>
     <script src="../javascript/script.js"></script>
   </body>
 </html>

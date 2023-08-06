@@ -1,9 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 /* base css start */
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
 
 * {
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -51,6 +68,11 @@ body {
 
 .menu-list-item {
   cursor: pointer;
+}
+.menu-list-item a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .menu-list-item:hover {
@@ -107,31 +129,58 @@ body {
   color: goldenrod;
 }
 /* navbar end */
+/* sidebar start */
+.sidebar {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  row-gap: 40px;
+  position: fixed;
+}
+
+.sidebar i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* sidebar end */
 
 /*main content start*/
 
 .intro-wrapper{
   background: url("../city-photos/bg.jpg");
-  object-fit: cover;
-}
+  padding: 50px;
+  height: calc(100vh - 160px);
+  background-size: cover;
+background-position: bottom;}
+  
 
 .intro-title{
-  font-size: 150px;
+  font-size: 90px;
   font-family: 'Satisfy', cursive;;
   color:whitesmoke;
   text-align: center;
+  margin-left: 50px;
+  padding:5% ;
 }
 
 .intro-text {
   background-color: rgb(255, 255, 255, 0.5);
-  padding: 10px;
-  margin: 30px 0;
+  padding: 20px;
+  margin-left: 50px;
   color: black;
   text-align: center;
+  font-size: 15px;
 }
 
 .intro{
-  padding-bottom: 300px;
+  padding-bottom: 80px;
 }
 
 .bottom-bar {
@@ -142,8 +191,35 @@ body {
   top: 0;
 }
 
-
 /*main content end*/
+
+/*nature content start*/
+
+.natural-container {
+  margin-left: 70px;
+}
+
+.natural-title {
+  padding-top: 30px;
+  margin-left: 70px;
+  text-align: center;
+}
+
+.natural-text-container {
+  background-color: rgb(255, 255, 255, 0.5);
+  padding-left: 50px;
+  padding-right: 20px;
+  margin: 30px;
+  text-align: left;
+  column-gap: 5px;
+  text-size-adjust: 5px;
+}
+
+.about-container .about-text-container p strong{
+  cursor: pointer;
+}
+/*nature content end*/
+
 
 /*dark mode start*/
 

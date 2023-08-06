@@ -1,3 +1,23 @@
+<?php
+$correctUsername='g211210092@sakarya.edu.tr';
+$correctPassword='g211210092'; 
+
+if (isset($_POST['username'])) {
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+
+    if($correctUsername==$username && $correctPassword==$password){
+        echo "Hoşgeldiniz + $username";
+        header('Location: http://localhost/yk-site/index.html');
+    }
+
+    else {
+        echo "Tekrar deneyiniz.";
+    }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +30,17 @@
         <div class="logo">
             <img src="../photos/Kaftar-sb.png" alt="Logo">
         </div>
-        <form action="#">
+        <form action="#" method="post">
 
             <div class="title">Giriş Yap</div>
 
             <div class="input-box">
-                <input type="email" placeholder="Email giriniz (11111@sakarya.edu.tr)"required autofocus>
+                <input type="email" name="username" placeholder="Email giriniz (11111@sakarya.edu.tr)"required autofocus>
                 <div class="underline"></div>
             </div>
 
             <div class="input-box button">
-                <input type="password" placeholder="Şifre giriniz " required>
+                <input type="password" name="password" placeholder="Şifre giriniz " required>
                 <div class="underline"></div>
             </div>
 
@@ -32,7 +52,7 @@
 
 
     </div>
-    <script>
+   <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("login-button").addEventListener("click", function (event) {
                 event.preventDefault();
@@ -58,7 +78,7 @@
                 window.location.href = "index.html";
             });
         });
-    </script>
+    </script>-->
     
     
     
