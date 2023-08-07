@@ -22,16 +22,28 @@
             <li class="menu-list-item">
               <a href="city.html" target="_self">Şehrim</a>
             </li>
-            <li class="menu-list-item"><a href="#iletisim">İletişim</a></li>
+            <li class="menu-list-item">
+              <a href="#contact-container">İletişim</a>
+            </li>
           </ul>
         </nav>
       </section>
       <section>
         <div class="profile-container">
           <img class="profile-picture" src="../photos/hesap-logo.png" alt="" />
-          <div class="profile-text-container">
-            <span class="profile-text">Hesabım</span>
-            <i class="bi bi-caret-down-square-fill"></i>
+          <div class="logout" onclick="LogoutButton()">
+            <div class="profile-text-container" >
+              <span class="profile-text">Hesabım</span>
+              <i class="bi bi-caret-down-square-fill"></i>
+            </div>
+            <button
+              class="logout-button"
+              id="logoutButton"
+              style="display: none"
+              onclick="logout()"
+            >
+              Çıkış Yap
+            </button>
           </div>
           <div class="toggle">
             <i class="bi bi-moon-fill toggle-icon"></i>
@@ -310,54 +322,58 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe
           ><br />
-          <form @submit.prevent="submitForm" class="contact-form-wrapper">
+          <form class="contact-form-wrapper">
             <h3>
               Öneri ve Şikayetlerinizi aşağıdaki formdan doldurabilirsiniz.
             </h3>
-            <div class="input-box">
+            <label for="first-name" class="input-box">
               <i class="bi bi-person-fill"></i>
               <input
                 type="text"
-                name="name"
-                v-model="formData.name"
+                name="First Name"
                 placeholder="Ad"
                 autocomplete="off"
+                required
               />
-            </div>
-            <div class="input-box">
+            </label>
+            <label for="last-name" class="input-box">
               <i class="bi bi-person-fill"></i>
               <input
                 type="text"
-                name="surname"
-                v-model="formData.surname"
+                name="Last Name"
                 placeholder="Soyad"
                 autocomplete="off"
+                required
               />
-            </div>
-            <div class="input-box">
+            </label>
+            <label for="e-mail" class="input-box">
               <i class="bi bi-envelope-fill"></i>
               <input
                 type="email"
-                name="email"
-                v-model="formData.email"
+                name="E-mail"
                 placeholder="e-mail"
                 autocomplete="off"
+                required
               />
-            </div>
-            <div class="input-box">
+            </label>
+            <label for="ideas" class="input-box">
               <i class="bi bi-card-text"></i>
-              <input
+              <textarea
                 type="textarea"
-                name="message"
-                v-model="formData.message"
+                name="Message"
                 placeholder="Görüşleriniz"
                 autocomplete="off"
-              />
-            </div>
+                required
+              ></textarea>
+            </label>
             <div class="button-wrapper">
-              <button class="button" type="submit">Gönder</button>
-              <button class="button" @click="clearForm">Temizle</button>
-              <button class="button" @click="showComplaints">Şikayetler</button>
+              <button class="button" type="submit" onclick="showMessage()">
+                Gönder
+              </button>
+              <button class="button" onclick="clearForm()">Temizle</button>
+              <button class="button" onclick="showComplaints()">
+                Şikayetler
+              </button>
             </div>
           </form>
         </div>
@@ -367,6 +383,5 @@
 
     <script src="../javascript/script.js"></script>
     <script src="../javascript/contact.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   </body>
 </html>

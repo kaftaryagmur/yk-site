@@ -110,7 +110,23 @@ body {
   align-items: center;
   column-gap: 5px;
   line-height: 1px;
+  cursor: pointer;
 }
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+
 
 .toggle {
   width: 40px;
@@ -409,12 +425,14 @@ body {
 .contact-container {
   margin-left: 50px;
 }
+
 .contact-title {
   padding: 30px;
   margin-left: 70px;
   text-align: center;
   font-size: 40px;
 }
+
 .contact-wrapper {
   background: url(../photos/contact-bg.jpg);
   background-position:cover;
@@ -435,6 +453,7 @@ body {
   justify-content: center;
   font-size: 25px;
 }
+
 .contact-form-wrapper h3{
   margin-bottom: 12px;
 }
@@ -446,17 +465,27 @@ body {
   align-items: center;
 
 }
+
 .contact-container .contact-wrapper .inputBox{
   background-color: rgba(38, 37, 37, 0.5);
   font-size: 30px;
   padding-left: 20px;
 }
+
 .contact-wrapper input{
   margin-left: 5px;
   border: none;
   border-radius: 5px;
   height: 27px;
 }
+
+.contact-wrapper textarea{
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  height: 27px;
+}
+
 .button-wrapper{
   display: flex;
 }
@@ -493,7 +522,7 @@ body {
 
 .menu-list-item a.active {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .navbar.active {
@@ -529,7 +558,7 @@ body {
 }
 
 .education-container.active {
-  color: white;
+  color: black;
   background-color: white;
 }
 
@@ -555,6 +584,9 @@ body {
   background-size: cover;
 }
 
+.contact-title.active{
+  color: black;
+}
 /*dark mode end*/
 
 /*responsive start*/

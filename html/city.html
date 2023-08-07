@@ -13,27 +13,20 @@
 
   <body>
     <!-- navbar start -->
-    <div class="navbar">
+
+    <div class="navbar" id="ana-sayfa">
       <div class="navbar-wrapper">
-        <div class="logo">
-          <img src="../city-photos/dark-logo.png" alt="" />
-        </div>
         <div class="menu-container">
           <ul class="menu-list">
             <li class="menu-list-item">
               <a href="../html/index.html">Ana Sayfa</a>
             </li>
             <li class="menu-list-item active">Şehrim</li>
-            <li class="menu-list-item">İletişim</li>
           </ul>
-        </div>
-        <div class="toggle">
-          <i class="bi bi-moon-fill toggle-icon"></i>
-          <i class="bi bi-brightness-low-fill toggle-icon"></i>
-          <div class="toggle-ball"></div>
         </div>
       </div>
     </div>
+
     <!-- navbar end -->
 
     <!-- sidebar start -->
@@ -41,8 +34,7 @@
       <i class="bi bi-arrow-up" id="main"></i>
       <i class="bi bi-tree-fill" id="natural"></i>
       <i class="bi bi-bricks" id="historical"></i>
-      <i class="bi bi-shop"></i>
-      <i class="bi bi-envelope-plus-fill"></i>
+      <i class="bi bi-shop" id="cafe"></i>
     </div>
     <!-- sidebar end -->
 
@@ -51,30 +43,13 @@
       <div class="intro-content">
         <div class="intro">
           <h4 class="intro-title">Sonsuz Denizin Masalsı Kıyısında</h4>
-          <!--<p class="intro-text">
-            Samsun, Türkiye'nin Karadeniz Bölgesi'nde yer alan tarih kokan,
-            kültürel zenginlikleri ve muhteşem doğasıyla büyüleyici bir
-            şehirdir.<br />
-            2021 yılı itibarıyla Samsun'un nüfusu yaklaşık 1,364,527 kişidir. Bu
-            nüfusla Türkiye'nin en kalabalık dokuzuncu şehri konumundadır.<br />
+          <p class="intro-text">
             Tarihi, binlerce yıl öncesine dayanan Samsun, Hititler, Pontus
             Krallığı, Romalılar ve Osmanlı İmparatorluğu gibi pek çok medeniyete
             ev sahipliği yapmıştır.<br />
-            Şehrin en önemli tarihi mekanlarından biri, Atatürk'ün Bandırma
-            Vapuru ile 19 Mayıs 1919'da Samsun'a ayak basarak Türkiye
-            Cumhuriyeti'nin temellerini attığı Samsun Limanı'dır. 19 Mayıs
-            Atatürk'ü Anma, Gençlik ve Spor Bayramı her yıl burada coşkuyla
-            kutlanır.<br />
             Samsun, aynı zamanda kültürel mirasıyla da göz kamaştırır. Arkeoloji
             ve Etnografya Müzesi'nde tarih kokan eserler sergilenirken, Bandırma
-            Vapuru Müzesi'nde Cumhuriyet'in doğuşu anlatılır. Şehirdeki tarihi
-            camiler, hanlar ve hamamlar da geçmişin izlerini günümüze taşır.<br />
-            Doğal güzellikleriyle de ünlü olan Samsun, sahil şeridi boyunca
-            uzanan plajları ve yeşillikler içindeki parklarıyla huzur dolu bir
-            atmosfere sahiptir. Bafra Longoz Ormanları ve Kızılırmak Deltası
-            Milli Parkı gibi doğal alanlar, doğa severleri kendine çekerken,
-            Amisos Tepesi'nden şehrin muhteşem manzarasını izlemek ise unutulmaz
-            anlar yaşatır.<br />
+            Vapuru Müzesi'nde Cumhuriyet'in doğuşu anlatılır.<br />
             Samsun, aynı zamanda festivalleri ve etkinlikleriyle de renkli bir
             şehirdir. Uluslararası Samsun Dans ve Müzik Festivali, Samsun Rock
             Festivali gibi etkinlikler, şehre enerji katar.<br />
@@ -82,11 +57,10 @@
             ziyaretçilerini ağırlamaya her zaman hazır bir kenttir. Eşsiz
             deneyimler ve sıcak misafirperverlik için herkesi Samsun'a
             bekleriz.<br />
-          </p>-->
+          </p>
         </div>
       </div>
     </section>
-    <div class="bottom-bar"></div>
     <!--main content end-->
 
     <!--natural content start-->
@@ -103,12 +77,417 @@
           misafirlerine keşif dolu bir yolculuk vaat eder.
         </p>
       </div>
-      <div class="natural-area1">
+      <section class="photos" id="photos">
+        <div class="container">
+          <div class="content">
+            <div class="slider">
+              <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1" />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <input type="radio" name="radio-btn" id="radio3" />
+                <input type="radio" name="radio-btn" id="radio4" />
+
+                <div class="image first">
+                  <a
+                    target="_blank"
+                    href="https://www.yerelrehber.com/kesfet/gezilecek-yerler/atakum-sahili"
+                  >
+                    <img src="../city-photos/sahil.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="img">
+                  <a
+                    target="_blank"
+                    href="https://www.yerelrehber.com/kesfet/gezilecek-yerler/kizilirmak-deltasi"
+                  >
+                    <img src="../city-photos/kızılırmak.png" alt=""
+                  /></a>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://www.yerelrehber.com/kesfet/gezilecek-yerler/nebiyan-dagi#"
+                  ><img src="../city-photos/nebiyan.jpg" alt=""
+                /></a>
+                <div class="img"></div>
+                <a
+                  target="_blank"
+                  href="https://www.yerelrehber.com/kesfet/gezilecek-yerler/ladik-akdag-kis-turizm-merkezi"
+                  ><img src="../city-photos/ladik.jpg" alt=""
+                /></a>
+                <div class="img"></div>
+
+                <div class="nav-auto">
+                  <div class="a-b1"></div>
+                  <div class="a-b2"></div>
+                  <div class="a-b3"></div>
+                  <div class="a-b4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="natural-text">
+        <div class="sahil-text">
+          <h3>Sahil Şeridi ve Plajları</h3>
+          <p>
+            Samsun, Karadeniz'in eşsiz güzelliklerine sahip uzun bir sahil
+            şeridine ev sahipliği yapar. Sahil boyunca yer alan plajları ve açık
+            hava alanları, hem yerli halkın hem de turistlerin keyifli vakit
+            geçirmesi için ideal bir ortam sunar. Sahil şeridi, masmavi denizi
+            ve yeşilliklerle süslü parklarıyla göz alıcı bir manzara sunarken,
+            sahilde yürüyüş yapmak veya bisiklet sürmek gibi etkinlikler için
+            harika bir ortam sağlar. Ayrıca, sıcak yaz günlerinde denizin tadını
+            çıkarmak isteyenler için birbirinden güzel plajlar da bulunur.
+            Samsun sahil şeridi, doğanın ve denizin huzurlu kucaklaşmasına şahit
+            olmak isteyenler için vazgeçilmez bir destinasyondur.
+          </p>
+        </div>
+        <br />
+        <div class="kızılırmak-text">
+          <h3>Kızılırmak Deltası</h3>
+          <p>
+            Samsun'un doğal zenginliklerinden biri olan Kızılırmak Deltası,
+            büyüleyici sulak alanları ve sazlıkları ile eşsiz bir doğal
+            güzelliğe sahiptir. Kızılırmak Nehri'nin Karadeniz'e kucak açtığı bu
+            alan, farklı kuş türlerinin göç rotaları arasında yer alır ve doğal
+            yaşamın canlı bir ders kitabı gibidir. Kuş gözlemcileri için adeta
+            bir cennet olan Kızılırmak Deltası, flamingolar, pelikanlar,
+            leylekler ve diğer sayısız kuş türünü barındırır. Bölgede yapılan
+            kuş gözlem turları, ziyaretçilere unutulmaz bir doğa deneyimi
+            yaşatır. Ayrıca, sazlıklar arasında teknelerle yapılan geziler,
+            doğanın sessizliğinde huzurlu bir yolculuk sunar. Kızılırmak
+            Deltası, doğa severlerin vazgeçemeyeceği ve keşfetmek için
+            sabırsızlandığı eşsiz bir doğal alan olarak bilinir.
+          </p>
+        </div>
+        <br />
+        <div class="nebiyan-text">
+          <h3>Nebiyan Dağı</h3>
+          <p>
+            Samsun, Karadeniz'in eşsiz güzelliklerine sahip uzun bir sahil
+            şeridine ev sahipliği yapar. Sahil boyunca yer alan plajları ve açık
+            hava alanları, hem yerli halkın hem de turistlerin keyifli vakit
+            geçirmesi için ideal bir ortam sunar. Sahil şeridi, masmavi denizi
+            ve yeşilliklerle süslü parklarıyla göz alıcı bir manzara sunarken,
+            sahilde yürüyüş yapmak veya bisiklet sürmek gibi etkinlikler için
+            harika bir ortam sağlar. Ayrıca, sıcak yaz günlerinde denizin tadını
+            çıkarmak isteyenler için birbirinden güzel plajlar da bulunur.
+            Samsun sahil şeridi, doğanın ve denizin huzurlu kucaklaşmasına şahit
+            olmak isteyenler için vazgeçilmez bir destinasyondur.Samsun'un doğal
+            güzelliklerinin en etkileyici noktalarından biri Nebiyan Dağı'dır.
+            Şehir merkezinin kuzeydoğusunda yer alan bu dağ, yemyeşil ormanları,
+            serin suları ve muhteşem manzarasıyla ziyaretçilerini büyüler. Doğa
+            yürüyüşçüleri, dağcılar ve doğa severler için ideal bir rotadır.
+            Dağın zirvesine çıktığınızda, Samsun'un ve Karadeniz'in eşsiz
+            manzarasını izlemek mümkündür. Ayrıca, Nebiyan Dağı'nın eteklerinde
+            yer alan doğal piknik alanları ve şelaleleri de ziyaretçilere
+            keyifli bir gün geçirme imkanı sunar.
+          </p>
+        </div>
+        <br />
+
+        <div class="akdag-text">
+          <h3>Ladik Akdağ</h3>
+          <p>
+            Samsun'un doğal güzelliklerinin en etkileyici noktalarından biri
+            Ladik Akdağ'dır. Bölgenin en yüksek noktalarından biri olan bu dağ,
+            doğa yürüyüşçüleri ve dağcılar için özel bir rotadır. Serin ve temiz
+            havası, yemyeşil ormanları ve muhteşem manzarasıyla ziyaretçilerine
+            unutulmaz anlar yaşatır. Doğanın kucağında dinginliği
+            bulabileceğiniz Ladik Akdağ, trekking ve doğa yürüyüşü yapmak
+            isteyenlerin tercih ettiği bir destinasyondur. Dağın zirvesine
+            tırmanarak, Samsun ve Karadeniz'in muhteşem manzarasını izlemek
+            mümkündür. Ayrıca, çevrede yer alan doğal piknik alanları ve
+            şelaleler, doğaseverlere keyifli bir gün geçirme fırsatı sunar.
+            Ladik Akdağ, adeta doğanın kucaklayıcı şefkatini hissetmek
+            isteyenler için başka bir dünyanın kapılarını aralayan doğal bir
+            güzelliktir.
+          </p>
+        </div>
+        <br />
+      </section>
+    </section>
+    <!--natural content end-->
+
+    <!--historical content start-->
+    <section class="historical-container" id="tarihi">
+      <h1 class="historical-title">Geçmişin İzinde</h1>
+      <div class="historical-text-container">
+        <br />
+        <br />
+        <p>
+          Samsun, Türkiye'nin Karadeniz Bölgesi'nde tarih kokan sokakları ve
+          zengin kültürel mirasıyla büyüleyici bir şehirdir. Binlerce yıllık
+          geçmişi ve pek çok medeniyete ev sahipliği yapmış olması, Samsun'u
+          tarihi keşifler yapmak isteyenler için ideal bir destinasyon haline
+          getirmiştir. Bu şehirde her adımınızda geçmişin izlerini taşıyan
+          tarihi yapılar ve alanlarla karşılaşabilirsiniz.
+        </p>
+      </div>
+      <section class="photo-wrapper">
+        <div class="photos">
+          <div class="image-box">
+            <a
+              target="_blank"
+              href="https://isteataturk.com/g/icerik/Ataturk-Heykeli-Samsun/1554"
+            >
+              <img src="../city-photos/atatürk.png" alt="" />
+            </a>
+          </div>
+          <div class="image-box">
+            <a
+              target="_blank"
+              href="https://www.yerelrehber.com/kesfet/gezilecek-yerler/samsun-amazon-heykeli"
+            >
+              <img src="../city-photos/amazon-heykel.png" alt=""
+            /></a>
+          </div>
+
+          <div class="image-box">
+            <a
+              target="_blank"
+              href="https://www.yerelrehber.com/kesfet/muze/bandirma-gemi-muze-ve-milli-mucadele-acik-hava-muzesi"
+              ><img src="../city-photos/bandırma.png" alt=""
+            /></a>
+          </div>
+
+          <div class="image-box">
+            <a
+              target="_blank"
+              href="https://www.yerelrehber.com/kesfet/gezilecek-yerler/amisos-mezarlari"
+              ><img src="../city-photos/mezar.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="historical-text">
+        <div class="ataturk-text">
+          <h3>Atatürk Heykeli</h3>
+          <p>
+            Samsun'un milli mücadele döneminin önemli sembollerinden biri olan
+            Atatürk Heykeli, Türkiye Cumhuriyeti'nin kurucusu ve ilk
+            Cumhurbaşkanı Mustafa Kemal Atatürk'ün Samsun'a gelişini simgeler.
+            Şehrin en merkezi noktalarından birinde yer alan bu etkileyici
+            heykel, 19 Mayıs 1919'da Samsun'a ayak basan Atatürk'ü tasvir eder.
+            Yüksekliği ve heybetli duruşuyla ziyaretçilere Türkiye'nin kurtuluş
+            mücadelesinin önemini hatırlatan bir anıt olarak hizmet verir.
+            Atatürk Heykeli, Samsun'un milli tarihine tanıklık etmek ve milli
+            mücadele döneminin önemli anlarını yad etmek isteyenler için
+            duygusal bir atmosfer sunar. Şehrin simgesi haline gelen Atatürk
+            Heykeli, ziyaretçilerin saygı ve sevgiyle andığı bir noktadır.
+          </p>
+        </div>
+        <br />
+        <div class="amazon-heykel-text">
+          <h3>Amazon Heykeli</h3>
+          <p>
+            Samsun şehrinin simgelerinden biri olan Amazon Heykeli, Türkiye'nin
+            en yüksek heykellerinden biri olarak dikkat çeker. Samsun'un Atakum
+            ilçesinde yer alan bu muazzam heykel, efsanevi Amazon kadın
+            savaşçılarını temsil eder. Yapımı 2010 yılında tamamlanan heykel, 15
+            metre yüksekliğinde ve 50 ton ağırlığındadır. Etkileyici tasarımı ve
+            yüksek noktadan şehir manzarasını sunan konumu ile ziyaretçilere
+            unutulmaz bir deneyim yaşatır. Amazon Heykeli, Samsun'u ziyaret
+            edenler için görülmesi gereken önemli bir turistik mekandır ve
+            şehrin eşsiz kültürel kimliğini yansıtan anıtsal eserler arasında
+            yer alır.
+          </p>
+        </div>
+        <br />
+        <div class="bandırma-text">
+          <h3>Bandırma Gemisi Açık Hava Müzesi</h3>
+          <p>
+            Samsun'un milli mücadele döneminin önemli sembollerinden biri olan
+            Bandırma Gemisi, 19 Mayıs 1919'da Atatürk'ün Samsun'a ayak bastığı
+            gemidir. Gemi, milli mücadelenin başlangıcını simgeler ve Türkiye
+            Cumhuriyeti'nin doğuşuna tanıklık etmiştir. Samsun Limanı'nda
+            ziyaretçilere açık olan Bandırma Gemisi, açık hava müzesi olarak
+            düzenlenmiştir. Gemi, ziyaretçilere dönemin atmosferini yaşatarak,
+            Türkiye'nin tarih sahnesine çıktığı kritik anlara tanıklık etme
+            fırsatı sunar. Bandırma Gemisi Açık Hava Müzesi, milli tarihimizi
+            anlamak ve Atatürk'ün Samsun'a gelişini hissetmek isteyenler için
+            önemli bir destinasyondur.
+          </p>
+        </div>
+        <br />
+
+        <div class="akdag-text">
+          <h3>Amisos Mezarları</h3>
+          <p>
+            Samsun'un tarihi zenginliklerinden biri olan Amisos Mezarları,
+            Amisos Antik Kenti'nde yer alan önemli arkeolojik alanlardan
+            biridir. Mezarlar, Helenistik dönemde Amisos şehrinde yaşamış önemli
+            kişilerin gömülme alanlarını içerir. Mezarların içerisinde bulunan
+            freskler ve mezar eşyaları, ziyaretçilere antik döneme ait benzersiz
+            bir kültürel mirası gözler önüne serer. Amisos Mezarları, tarihi
+            sevenler ve arkeoloji meraklıları için Samsun'da keşfedilecek önemli
+            bir noktadır ve geçmişin mistik atmosferini yaşamak isteyenleri
+            büyüler.
+          </p>
+        </div>
+        <section class="photo-wrapper">
+          <div class="photos">
+            <div class="image-box">
+              <a
+                target="_blank"
+                href="http://samsunrestaurant.com/mekan/et-atolyesi/"
+              >
+                <img src="../city-photos/et-atolyesi.jpg" alt="" />
+              </a>
+            </div>
+            <div class="image-box">
+              <a
+                target="_blank"
+                href="http://samsunrestaurant.com/samsunrestaurant/pamuk-kardesler-balik-restaurant/"
+              >
+                <img src="../city-photos/pamuk-kardesler.jpg" alt=""
+              /></a>
+            </div>
+
+            <div class="image-box">
+              <a
+                target="_blank"
+                href="https://www.pastahane.com.tr/index.php?route=common/home"
+                ><img src="../city-photos/pastahane.jpg" alt=""
+              /></a>
+            </div>
+
+            <div class="image-box">
+              <a
+                target="_blank"
+                href="https://tr.foursquare.com/v/rock-city-bar/5456c03e498eb34a385f2ef3"
+                ><img src="../city-photos/rock-city.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+        <br />
+      </section>
+    </section>
+    <!--historical content end-->
+
+    <!--touristic content start-->
+    <section class="touristic-container" id="eglence">
+      <h1 class="touristic-title">Lezzet ve Eğlence Dünyası</h1>
+      <div class="touristic-text-container">
+        <br />
+        <br />
+        <p>
+          Samsun, lezzet tutkunları ve eğlence arayanlar için çeşitlilik sunan
+          bir şehir. Et severler için özenle hazırlanmış et restoranları, enfes
+          lezzetler sunar ve Türk mutfağının eşsiz tatlarını deneyimlemenizi
+          sağlar. Balık restoranları, Karadeniz'in taptaze deniz ürünleriyle
+          ünlüdür ve misafirlerine zengin balık çeşitleri ve muhteşem deniz
+          manzarası eşliğinde unutulmaz bir balık ziyafeti yaşatır. Canlı gece
+          hayatı arayanlar için şehirdeki barlar, çeşitli müzik türlerinden
+          canlı performanslar ve DJ setleri ile keyifli bir eğlence ortamı
+          sunar. Pastahaneler, ev yapımı tatlıları ve özel pastalarıyla tatlı
+          severleri memnun ederken, kafeler ise huzurlu atmosferi, taze kahve ve
+          çeşitli atıştırmalıklarıyla arkadaşlarla veya kitap başında keyifli
+          bir mola imkanı sunar. Samsun, her zevke hitap eden restoranlar,
+          barlar, pastahaneler ve kafeleriyle misafirlerini lezzetli ve keyifli
+          anlarla buluşturan bir şehirdir.
+        </p>
       </div>
 
-    </section>
-    <!--natural content start-->
+      <section class="touristic-text">
+        <div class="et-atölyesi-text">
+          <h3>Et Atölyesi & Steak House</h3>
+          <p>
+            Samsun'un lezzetli et yemekleriyle ünlenen mekanlarından biri olan
+            Et Alöylesi Restoranı, et severler için ideal bir tercihtir. Özenle
+            seçilmiş etler ve ustalıkla hazırlanan lezzetli yemekler,
+            ziyaretçilere unutulmaz bir deneyim sunar. Şık ve sıcak bir ortamda,
+            Türk ve Osmanlı mutfağının özel et lezzetlerinin keyfini çıkarmak
+            mümkündür. Et Alöylesi Restoranı, kaliteli hizmet anlayışı ve zengin
+            menüsü ile et tutkunlarının uğrak noktasıdır.
+          </p>
+        </div>
+        <br />
+        <div class="pamuk-kardesler-text">
+          <h3>Pamuk Kardeşler Balık Restaurant</h3>
+          <p>
+            Karadeniz'in taze deniz ürünleriyle meşhur Samsun kıyısında yer alan
+            Ramuk Kardeşler Balık Restoranı, balıkseverlerin vazgeçilmez
+            mekanlarından biridir. Deniz manzarası eşliğinde, taze balık ve
+            deniz mahsullerinin enfes lezzetini tatmak mümkündür. Şehrin yerel
+            balıkçılarından gelen taze ürünlerle hazırlanan mezeler ve balık
+            çeşitleri, misafirlerine keyifli bir balık ziyafeti yaşatır. Ramuk
+            Kardeşler Balık Restoranı, taze deniz lezzetlerini keşfetmek
+            isteyenleri ağırlayan lezzetli bir mekan olarak öne çıkar.
+          </p>
+        </div>
+        <br />
+        <div class="pastahane-text">
+          <h3>PastaHane</h3>
+          <p>
+            Samsun'un tatlı severlerine hitap eden PastaHane, eşsiz pastaları ve
+            lezzetli atıştırmalıklarıyla bilinir. Ev yapımı tatlıları ve özel
+            lezzetleriyle öne çıkan bu pastane, taze malzemelerle hazırlanan
+            ürünleri ile dikkat çeker. Sıcak ve davetkar bir ortamda, çeşit
+            çeşit pasta ve tatlı seçeneklerinin tadını çıkarmak mümkündür.
+            PastaHane, tatlı krizlerini gidermek ve özel günlerde tatlı bir mola
+            vermek isteyenleri ağırlayan lezzetli bir mekan olarak bilinir.
+          </p>
+        </div>
+        <br />
 
-    <script src="../javascript/city.js"></script>
+        <div class="rock-city-text">
+          <h3>Rock City Bar</h3>
+          <p>
+            Samsun'un canlı gece hayatına renk katan Rock City Bar,
+            müzikseverlerin favori adreslerinden biridir. Farklı müzik türlerine
+            ve canlı performanslara ev sahipliği yapan bu bar, gençlerin ve
+            yetişkinlerin keyifli zaman geçirdiği bir eğlence mekanıdır. Rock
+            City Bar, enerjik atmosferi, dostça ortamı ve çeşitli içecek
+            seçenekleriyle ziyaretçilerine unutulmaz bir gece yaşatır. Canlı
+            müzik performansları, DJ setleri ve dans pisti ile eğlenceli bir
+            gece geçirmek isteyenler için Rock City Bar, tercih edilecek bir
+            mekan olarak öne çıkar.
+          </p>
+        </div>
+        <br />
+      </section>
+    </section>
+    <!--touristic content end-->
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 2000);
+    </script>
+    <script>
+      const icon1 = document.getElementById("main");
+      const icon2 = document.getElementById("natural");
+      const icon3 = document.getElementById("historical");
+      const icon4 = document.getElementById("cafe");
+
+      const hedef1 = document.getElementById("ana-sayfa");
+      const hedef2 = document.getElementById("dogal");
+      const hedef3 = document.getElementById("tarihi");
+      const hedef4 = document.getElementById("eglence");
+
+      main.addEventListener("click", function () {
+        hedef1.scrollIntoView({ behavior: "smooth" });
+      });
+
+      natural.addEventListener("click", function () {
+        hedef2.scrollIntoView({ behavior: "smooth" });
+      });
+
+      historical.addEventListener("click", function () {
+        hedef3.scrollIntoView({ behavior: "smooth" });
+      });
+
+      cafe.addEventListener("click", function () {
+        hedef4.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>

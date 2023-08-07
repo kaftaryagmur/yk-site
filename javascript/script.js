@@ -4,6 +4,20 @@
       window.scrollTo(0, 0);
     }, 100);
   };
+  //Çıkış Yapma İşlemi
+  function logout() {
+    window.location.href = '../login.php';
+    alert('Tekrar görüşmek üzere!');
+  }
+  function LogoutButton() {
+    var logoutButton = document.getElementById("logoutButton");
+    
+    if (logoutButton.style.display === "none") {
+      logoutButton.style.display = "block";
+    } else {
+      logoutButton.style.display = "none";
+    }
+  }
 /*---------------------arrow start--------------------*/
 const arrows = document.querySelectorAll(".arrow");
 const documentList = document.querySelector(".documents-list");
@@ -32,7 +46,7 @@ arrows.forEach((arrow, i) => {
 /*---------------------dark mode start--------------------*/
 
 const ball = document.querySelector(".toggle-ball");
-const items = document.querySelectorAll(".container,.menu-list-item a,.navbar,.sidebar,.sidebar i,.toggle,.toggle-ball,.about-container,.education-container,.education-title,.about-text-container,.date,.education-picture-container,.featured-content");
+const items = document.querySelectorAll(".container,.menu-list-item a,.navbar,.sidebar,.sidebar i,.toggle,.toggle-ball,.about-container,.education-container,.education-title,.about-text-container,.date,.education-picture-container,.featured-content,.contact-title");
 
 ball.addEventListener("click", function () {
     items.forEach((item) => item.classList.toggle("active"))
@@ -51,7 +65,7 @@ ball.addEventListener("click", function () {
         const hedef1 = document.getElementById('ana-sayfa');
         const hedef2 = document.getElementById('hakkimda');
         const hedef3 = document.getElementById('egitim');
-        const hedef4 = document.getElementById('iletisim');
+        const hedef4 = document.getElementById('contact-container');
 
 
         // Iconlara tıklama olaylarını dinleyin ve odaklanma işlemini yapın
