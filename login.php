@@ -8,14 +8,14 @@ if (isset($_POST['username'])) {
 
     if($correctUsername==$username && $correctPassword==$password){
         echo "Hoşgeldiniz + $username";
-        header('Location: http://localhost/yk-site/index.html');
+        header('Location: http://localhost/yk-site/html/index.html');
     }
 
     else {
         echo "Tekrar deneyiniz.";
     }
-
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +24,11 @@ if (isset($_POST['username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giriş Sayfası</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="..\yk-site\css\login.css">
 <body>
     <div class="container"> 
         <div class="logo">
-            <img src="../photos/Kaftar-sb.png" alt="Logo">
+            <img src="..\yk-site\photos\Kaftarlogo.png" alt="Logo">
         </div>
         <form action="#" method="post">
 

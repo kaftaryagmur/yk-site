@@ -45,11 +45,14 @@ ball.addEventListener("click", function () {
         const icon1 = document.getElementById('main');
         const icon2 = document.getElementById('about');
         const icon3 = document.getElementById('education');
+        const icon4 = document.getElementById('contact');
 
         // Hedeflenen kısımları seçin
         const hedef1 = document.getElementById('ana-sayfa');
         const hedef2 = document.getElementById('hakkimda');
         const hedef3 = document.getElementById('egitim');
+        const hedef4 = document.getElementById('iletisim');
+
 
         // Iconlara tıklama olaylarını dinleyin ve odaklanma işlemini yapın
         main.addEventListener('click', function () {
@@ -62,6 +65,10 @@ ball.addEventListener("click", function () {
 
         education.addEventListener('click', function () {
             hedef3.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        contact.addEventListener('click', function () {
+            hedef4.scrollIntoView({ behavior: 'smooth' });
         });
 
        
